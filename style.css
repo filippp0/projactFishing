@@ -1,0 +1,299 @@
+.page {
+
+}
+
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+}
+
+/*стили header*/
+.header {
+}
+
+.page__header {
+  position: fixed;
+  margin: 0 auto;
+  background-color: grey;
+  top: 0;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 97px;
+  display: flex;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    min-height: 55px;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 105px;
+  margin: 16px 95.5px 20px 24px;
+}
+
+@media screen and (max-width:1279px) {
+  .header__logo {
+    width: calc(61px + (105 - 61)*((100vw - 375px)/(1280 - 375)));
+    height: calc(36px + (61 - 36)*((100vw - 375px)/(1280 - 375)));
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header__logo {
+    margin: 0;
+    width: 61px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: calc(18/375*100%);
+  }
+}
+
+.header__burger {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__burger {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/burger.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events:all;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger {
+    background-size: 30px 18px;
+    top: 10px;
+    right: 17px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.header__burger_open {
+  background-image: url(./images/Cancel.svg);
+  background-size: 30px 30pxpx;
+
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger_open {
+    background-size: 18px 18px;
+  }
+}
+
+/* .header__nav {
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    width: calc(343/375*100%);
+    border-radius: 25px;
+  }
+} */
+
+.header__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__nav {
+    visibility: hidden;
+    max-width: 1280px;
+    width: 100%;
+  }
+}
+
+.header__nav_type_l {
+  position: fixed;
+  top: 97px;
+  left: 0;
+  margin: 0 auto;
+  min-height: 97px;
+  visibility: visible;
+  background-color: #4598E4;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav_type_l {
+    flex-direction: column;
+    top: 55px;
+    left: calc(16/375*100%);
+    width: calc(343/375*100%);
+    min-height: 530px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+}
+
+
+
+.header__link-container {
+  margin-right: 20px;
+}
+
+.header__link-container:last-of-type {
+  margin-right: 0;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__button {
+  width: 185px;
+  height: 40px;
+  margin-top: 37px;
+  margin-left: auto;
+  margin-right: 24px;
+  background-color: #F15A29;
+  border-radius: 25px;
+  padding: 0;
+  border: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__button {
+    position: absolute;
+    margin: 0;
+    top: 37px;
+    left: calc(50% - 92.5px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    width: 166px;
+    height: 32px;
+    top: 12px;
+    left: calc(117/375*100%);
+  }
+}
+
+.main {
+  padding-top: 97px;
+}
+/*стили bestiary*/
+.bestiary {
+}
+
+.page__bestiary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bestiary__title {
+}
+
+.bestiary__container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 290px);
+  row-gap: 18px;
+  column-gap: 27px;
+}
+
+.bestiary__list {
+  border: 1px solid red;
+}
+
+.bestiary__group {
+  width: 290px;
+  height: 340px;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  border-radius: 90px;
+}
+
+.bestiary__background {
+  position: relative;
+  width: 185px;
+  height: 100%;
+  background-color: #4598E4;
+  border-radius: 90px;
+
+}
+
+.bestiary__fish {
+  position: absolute;
+  top: 40px;
+  left: -25px;
+  width: 318px;
+  height: 258px;
+  /* background-image: url(./images/sydak.png);
+  background-size: cover; */
+  animation:fish 2s ease-in-out 3;
+}
+
+@keyframes fish {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.bestiary__seaweed {
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  width: 331px;
+  height: 341px;
+  z-index: 1;
+  /* background-image: url(./images/trava.png);
+  background-size: cover; */
+  transform-origin: 331px 341px;
+  animation:seaweed 2s ease-in-out 3;
+}
+
+@keyframes seaweed {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(5deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.bestiary__description {
+}
+
+.bestiary__subtitle {
+}
+
+.bestiary__question {
+}

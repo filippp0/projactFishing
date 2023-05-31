@@ -1,0 +1,105 @@
+/* montserrat-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('montserrat-v25-cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: url('montserrat-v25-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('montserrat-v25-cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('montserrat-v25-cyrillic-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('montserrat-v25-cyrillic-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('montserrat-v25-cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-500 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('montserrat-v25-cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: url('montserrat-v25-cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('montserrat-v25-cyrillic-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('montserrat-v25-cyrillic-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('montserrat-v25-cyrillic-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('montserrat-v25-cyrillic-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-600 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('montserrat-v25-cyrillic-600.eot'); /* IE9 Compat Modes */
+  src: url('montserrat-v25-cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('montserrat-v25-cyrillic-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('montserrat-v25-cyrillic-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('montserrat-v25-cyrillic-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('montserrat-v25-cyrillic-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('montserrat-v25-cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: url('montserrat-v25-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('montserrat-v25-cyrillic-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('montserrat-v25-cyrillic-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('montserrat-v25-cyrillic-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('montserrat-v25-cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* unbounded-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('unbounded-v6-cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: url('unbounded-v6-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('unbounded-v6-cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('unbounded-v6-cyrillic-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('unbounded-v6-cyrillic-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('unbounded-v6-cyrillic-regular.svg#Unbounded') format('svg'); /* Legacy iOS */
+}
+/* unbounded-500 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  src: url('unbounded-v6-cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: url('unbounded-v6-cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('unbounded-v6-cyrillic-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('unbounded-v6-cyrillic-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('unbounded-v6-cyrillic-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('unbounded-v6-cyrillic-500.svg#Unbounded') format('svg'); /* Legacy iOS */
+}
+/* unbounded-600 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url('unbounded-v6-cyrillic-600.eot'); /* IE9 Compat Modes */
+  src: url('unbounded-v6-cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('unbounded-v6-cyrillic-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('unbounded-v6-cyrillic-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('unbounded-v6-cyrillic-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('unbounded-v6-cyrillic-600.svg#Unbounded') format('svg'); /* Legacy iOS */
+}
+/* unbounded-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('unbounded-v6-cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: url('unbounded-v6-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('unbounded-v6-cyrillic-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('unbounded-v6-cyrillic-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('unbounded-v6-cyrillic-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('unbounded-v6-cyrillic-700.svg#Unbounded') format('svg'); /* Legacy iOS */
+}
