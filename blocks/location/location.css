@@ -1,0 +1,235 @@
+.location {}
+
+.page__location {
+  position: relative;
+  padding-top: calc(160/1280*100%);
+}
+
+@media screen and (max-width: 768px) {
+  .page__location {
+    padding-top: 51px;
+  }
+}
+
+.location__links {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: calc(343/375*100%);
+  min-height: 52px;
+  left: calc(16/375*100%);
+  top: 16px;
+  background-color: #F15A29;
+}
+
+@media screen and (max-width: 768px) {
+  .location__links {
+    display: flex;
+    position: absolute;
+  }
+}
+
+.location__link-container {}
+
+.location__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.location__link_type_tg {
+  background-image: url(../../images/social/Telegram.png);
+}
+
+.location__link_type_wu {
+  background-image: url(../../images/social/Whatsapp.png);
+}
+
+.location__link_type_vk {
+  background-image: url(../../images/social/Vk.png);
+}
+
+.location__link_type_od {
+  background-image: url(../../images/social/cib_odnoklassniki.png);
+}
+
+.location__link_type_loc {
+  background-image: url(../../images/social/marker.png);
+}
+
+.location__title-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 423px;
+  margin-bottom: calc(124/1280*100%);
+}
+
+@media screen and (max-width: 768px) {
+  .location__title-container {
+    padding-top: 10px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.location__title {
+  display: inline-block;
+  padding-top: 19px;
+  margin: 0;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--mainblue);
+  font-family: var(--secondaryFont);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.24;
+}
+
+@media screen and (max-width: 768px) {
+  .location__title {
+    padding-top: 10px;
+    font-size: 24px;
+    margin-right: 62.6px;
+  }
+}
+
+.location__content-container {
+  margin: 0 auto;
+  width: calc(1127/1280*100%);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1279px) {
+  .location__content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location__content-container {
+    width: calc(343/375*100%);
+  }
+}
+
+.location__image {
+
+  width: calc(343px + (709 - 343)*((100vw - 375px)/(1280 - 375)));
+  height: calc(221px + (457 - 221)*((100vw - 375px)/(1280 - 375)));
+  max-width: 709px;
+  max-height: 457px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .location__image {
+    border-radius: 25px;
+  }
+}
+
+.location__text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.location__subtitle {
+  margin-top: calc(58/394*100%);
+  margin-bottom: calc(25/394*100%);
+  max-width: 394px;
+  text-transform: uppercase;
+  color: var(--mainblue);
+  font-family: var(--secondaryFont);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.24;
+
+}
+
+@media screen and (max-width: 1279px) {
+  .location__subtitle {
+    margin-top: 34px;
+    margin-bottom: 20px;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location__subtitle {
+    font-size: 20px;
+  }
+}
+
+.location__text {
+  margin: 0;
+  max-width: 394px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 1279px) {
+  .location__text {
+    order: 2;
+  }
+}
+
+.location__button-container {
+  margin-top: calc(58/394*100%);
+}
+
+@media screen and (max-width: 1279px) {
+  .location__button-container {
+    order: 0;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location__button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.location__button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../../images/left.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 66px;
+}
+
+@media screen and (max-width: 768px) {
+  .location__button {
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.location__button:last-of-type {
+  border-radius: 0;
+  margin: 0;
+  width: 80px;
+  background-image: url(../../images/right.svg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .location__button:last-of-type {
+    margin: 0;
+    width: 72px;
+  }
+}

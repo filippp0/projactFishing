@@ -6,4 +6,9 @@
 
 @import url(../blocks/header/header.css);
 
+@import url(../blocks/slider/slider.css);
+
 @import url(../blocks/bestiary/bestiary.css);
+
+@import url(../blocks/location/location.css);
+

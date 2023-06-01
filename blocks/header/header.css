@@ -62,7 +62,7 @@
     position: absolute;
     top: 97px;
     left: 0;
-    background-color: var(--fonForBurger);
+    background-color: var(--mainblue);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     z-index: 10;
@@ -162,7 +162,7 @@
   color: var(--main-color);
   font-weight: 500;
   font-family:'Unbounded', Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.24;
 }
 
@@ -170,6 +170,7 @@
   .header__button {
     margin-left: 0;
     margin-right: 0;
+    font-size: 10px;
   }
 }
 
