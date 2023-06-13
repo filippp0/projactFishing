@@ -1,19 +1,52 @@
 /*стили bestiary*/
-.bestiary {
-}
+.bestiary {}
 
 .page__bestiary {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 156px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__bestiary {
+    padding-top: 60px;
+  }
+}
+
+.bestiary__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  max-width: 418px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__title-container {
+    max-width: 247px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 .bestiary__title {
+  margin: 0;
   font-family: var(--secondaryFont);
   text-transform: uppercase;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.24;
+  color: var(--mainblue);
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__title {
+    font-size: 24px;
+  }
 }
 
 .bestiary__container {
@@ -28,17 +61,33 @@
   column-gap: 27px;
 }
 
+@media screen and (max-width: 768px) {
+  .bestiary__container {
+    grid-template-columns: repeat(auto-fit, 163px);
+    row-gap: 30px;
+    column-gap: 16px;
+  }
+}
+
 .bestiary__list {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .bestiary__group {
-  width: 290px;
+  width: 100%;
   height: 340px;
   display: flex;
   justify-content: end;
   overflow: hidden;
   border-radius: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__group {
+    width: 100%;
+    height: 193px;
+    border-radius: 50px;
+  }
 }
 
 .bestiary__background {
@@ -47,18 +96,32 @@
   height: 100%;
   background-color: var(--fonForFish);
   border-radius: 90px;
+}
 
+@media screen and (max-width: 768px) {
+  .bestiary__background {
+    width: 104px;
+    border-radius: 50px;
+  }
 }
 
 .bestiary__fish {
+  display: block;
   position: absolute;
   top: 40px;
   left: -25px;
   width: 318px;
   height: 258px;
-  /* background-image: url(./images/sydak.png);
-  background-size: cover; */
-  animation:fish 2s ease-in-out 3;
+  animation: fish 2s ease-in-out 3;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__fish {
+    width: 178px;
+    height: 146px;
+    left: -15px;
+    top: 30px;
+  }
 }
 
 @keyframes fish {
@@ -67,24 +130,33 @@
   }
 
   50% {
-    transform: translateX(-40px);
+    transform: translateX(-30px);
   }
 
   100% {
     transform: translateX(0px);
   }
 }
+
 .bestiary__seaweed {
+  display: block;
   position: absolute;
   top: 0px;
   left: -70px;
   width: 331px;
   height: 341px;
   z-index: 1;
-  /* background-image: url(./images/trava.png);
-  background-size: cover; */
   transform-origin: 331px 341px;
-  animation:seaweed 2s ease-in-out 3;
+  animation: seaweed 2s ease-in-out 3;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__seaweed {
+    width: 186px;
+    height: 193px;
+    top: 10px;
+    left: -30px;
+  }
 }
 
 @keyframes seaweed {
@@ -101,11 +173,56 @@
   }
 }
 
-.bestiary__description {
+.bestiary__subtitle {
+  font-family: var(--secondaryFont);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.24;
+  color: var(--mainblue);
 }
 
-.bestiary__subtitle {
+@media screen and (max-width: 768px) {
+  .bestiary__subtitle {
+    font-size: 16px;
+  }
 }
 
 .bestiary__question {
+  color: #F15A29;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.21;
+}
+
+.bestiary__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__description {
+    font-size: 14px;
+  }
+}
+
+.bestiary__decoration {
+  position: absolute;
+  top: -110px;
+  right: -156px;
+  width: 660px;
+  height: 620px;
+  background-image: url(../../images/decoration/decor-bestyary.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .bestiary__decoration {
+    width: 314px;
+    height: 295px;
+  }
 }

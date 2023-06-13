@@ -64,7 +64,7 @@
 
 .location__title-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 423px;
   margin-bottom: calc(124/1280*100%);
@@ -72,6 +72,7 @@
 
 @media screen and (max-width: 768px) {
   .location__title-container {
+    max-width: 250px;
     padding-top: 10px;
     font-size: 24px;
     margin-bottom: 40px;
@@ -95,7 +96,6 @@
   .location__title {
     padding-top: 10px;
     font-size: 24px;
-    margin-right: 62.6px;
   }
 }
 
