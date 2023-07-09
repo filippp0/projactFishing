@@ -1,3 +1,4 @@
+//бургер
 const burger = document.querySelector('.header__burger');
 const links = document.querySelector('.header__nav')
 
@@ -32,7 +33,7 @@ burger.addEventListener('click', () => {
   }
 })
 
-
+//Рекламка
 const dot1 = document.querySelector('.slider__dot_type_first');
 const dot2 = document.querySelector('.slider__dot_type_secons');
 const dot3 = document.querySelector('.slider__dot_type_third');
@@ -98,3 +99,49 @@ dot3.addEventListener('click', () => {
 swipe()
 
 setInterval(swipe, 5000)
+
+//Свайпер
+new Swiper('.swiper', {
+  navigation: {
+    prevEl: '.location__button-prev',
+    nextEl: '.location__button-next'
+  }
+})
+
+//Анимация
+const fishs = document.querySelectorAll('.bestiary__fish')
+const seaweeds = document.querySelectorAll('.bestiary__seaweed')
+
+function animate(items, cl) {
+  if (items.length > 0) {
+    window.addEventListener('scroll', animOnScroll)
+    function animOnScroll() {
+      for (let index = 0; index < items.length; index++) {
+        const animItem = items[index];
+        const animItemHeght = animItem.offsetHeight;
+        const animItemOffset = offset(animItem).top;
+        const animStart = 2;
+
+        let animItemPoint = window.innerHeight - animItemHeght / animStart;
+        if (animItemHeght > window.innerHeight) {
+          animItemPoint = window.innerHeight - window.innerHeight / animStart;
+        }
+
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeght) ) {
+          animItem.classList.add(`${cl}_active`)
+        } else {
+          animItem.classList.remove(`${cl}_active`)
+        }
+      }
+      function offset(el) {
+        const rect = el.getBoundingClientRect(),
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+      }
+    }
+  }
+}
+
+animate(fishs, 'bestiary__fish')
+animate(seaweeds, 'bestiary__seaweed')

@@ -112,7 +112,6 @@
   left: -25px;
   width: 318px;
   height: 258px;
-  animation: fish 2s ease-in-out 3;
 }
 
 @media screen and (max-width: 768px) {
@@ -138,6 +137,10 @@
   }
 }
 
+.bestiary__fish_active {
+  animation: fish 2s ease-in-out 3;
+}
+
 .bestiary__seaweed {
   display: block;
   position: absolute;
@@ -147,7 +150,6 @@
   height: 341px;
   z-index: 1;
   transform-origin: 331px 341px;
-  animation: seaweed 2s ease-in-out 3;
 }
 
 @media screen and (max-width: 768px) {
@@ -157,6 +159,10 @@
     top: 10px;
     left: -30px;
   }
+}
+
+.bestiary__seaweed_active {
+  animation: seaweed 2s ease-in-out 3;
 }
 
 @keyframes seaweed {

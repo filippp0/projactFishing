@@ -182,6 +182,9 @@
 
 .location__button-container {
   margin-top: calc(58/394*100%);
+  /* position: absolute;
+  top:0;
+  right: 0; */
 }
 
 @media screen and (max-width: 1279px) {
@@ -209,6 +212,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 66px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
