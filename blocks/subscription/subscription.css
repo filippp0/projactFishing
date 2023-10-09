@@ -1,0 +1,132 @@
+.subscription {}
+
+.page__subscription {
+  position: relative;
+  padding-top: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__subscription {
+    padding-top: 70px;
+  }
+}
+
+.subscription__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__title-container {
+    max-width: 279px;
+    margin-bottom: 40px;
+  }
+}
+
+.subscription__container {
+  margin: 0 auto;
+  width: calc(1024/1280*100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 499px);
+  justify-content: center;
+  column-gap: 26px;
+  row-gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__container {
+    grid-template-columns: repeat(auto-fit, 343px);
+  }
+}
+
+.subscription__content {
+  max-width: 499px;
+}
+
+.sububscription__card {
+  width: 100%;
+  min-height: 277px;
+  margin-bottom: 25px;
+  background-image: url(../../images/card_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .sububscription__card {
+    min-height: 190px;
+  }
+}
+
+.sububscription__card_type_white {
+  background-image: url(../../images/card_2.png);
+}
+
+.subscription__text {
+  max-width: 445px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__text {
+    max-width: 300px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.subscription__price {
+  max-width: 445px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: Unbounded;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__price {
+    max-width: 300px;
+  }
+}
+
+.subscription__price-text {
+  color: var(--mainblue);
+}
+
+.subscription__price-text_type_orange {
+  color: #F15A29;
+}
+
+.subscription__decor {
+  position: absolute;
+  width: 405px;
+  height: 375px;
+  background-image: url(../../images/decoration/subscription.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__decor {
+    width: 297px;
+    height: 282px;
+    top: 50px;
+    left: -150px
+  }
+}

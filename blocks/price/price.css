@@ -1,5 +1,12 @@
 .page__price {
+  position: relative;
   padding-top: 159px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__price {
+    padding-top: 70px;
+  }
 }
 
 .price__title-container {
@@ -113,5 +120,46 @@
 @media screen and (max-width: 768px) {
   .price__cost {
     font-size: 18px;
+  }
+}
+
+.price__decor {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 690px;
+  height: 669px;
+  background-image: url(../../images/decoration/decor-price1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .price__decor {
+    width: 261px;
+    height: 253px;
+    top: 35px;
+  }
+}
+
+.price__decor_type_finish {
+  position: absolute;
+  bottom: -275px;
+  right: -310px;
+  width: 481px;
+  height: 507px;
+  background-image: url(../../images/decoration/price-finish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .price__decor_type_finish {
+    width: 260px;
+    height: 247px;
+    bottom: -95px;
+    right: -180px;
   }
 }
