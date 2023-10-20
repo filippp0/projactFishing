@@ -11,4 +11,4 @@
   * 1ый - написан мной на ванильном js
   * 2ой - написан с использованием библиотеки swiper.js
 
-* ссылка на gh-pages: https://filippp0.github.io/green/
+* ссылка на gh-pages: https://filippp0.github.io/projactFishing/
